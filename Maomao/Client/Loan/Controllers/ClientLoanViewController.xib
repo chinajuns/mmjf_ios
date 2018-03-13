@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClientLoanViewController">
+            <connections>
+                <outlet property="loantab" destination="VKS-nd-LyG" id="WvC-Lm-es9"/>
+                <outlet property="screenView" destination="NjQ-Tc-yLq" id="KNi-eN-dKj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VKS-nd-LyG">
+                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                    <color key="backgroundColor" red="0.96460121870040894" green="0.96476620435714722" blue="0.96459084749221802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NjQ-Tc-yLq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hJJ-H2-lCU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VKS-nd-LyG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2sf-6H-dfL"/>
+                <constraint firstAttribute="trailing" secondItem="VKS-nd-LyG" secondAttribute="trailing" id="HNf-1b-sEN"/>
+                <constraint firstItem="VKS-nd-LyG" firstAttribute="top" secondItem="NjQ-Tc-yLq" secondAttribute="bottom" id="NYI-mi-Ol3"/>
+                <constraint firstAttribute="bottom" secondItem="VKS-nd-LyG" secondAttribute="bottom" id="bIP-1H-PTa"/>
+                <constraint firstItem="NjQ-Tc-yLq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cI8-oB-tq5"/>
+                <constraint firstAttribute="trailing" secondItem="NjQ-Tc-yLq" secondAttribute="trailing" id="dox-GP-lm1"/>
+                <constraint firstItem="NjQ-Tc-yLq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uvC-zl-hFq"/>
+            </constraints>
+            <point key="canvasLocation" x="49.5" y="132.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClientMineViewController">
+            <connections>
+                <outlet property="mineTab" destination="xDt-oR-qIs" id="4sC-ge-q55"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxH-tq-slP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                    <color key="backgroundColor" red="1" green="0.82555752989999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="UhN-RT-Shu"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xDt-oR-qIs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xDt-oR-qIs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IUJ-4k-lwx"/>
+                <constraint firstItem="xDt-oR-qIs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IgJ-cz-6Y5"/>
+                <constraint firstAttribute="trailing" secondItem="xDt-oR-qIs" secondAttribute="trailing" id="RrR-DG-HhG"/>
+                <constraint firstItem="qxH-tq-slP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gql-hr-d5e"/>
+                <constraint firstAttribute="trailing" secondItem="qxH-tq-slP" secondAttribute="trailing" id="hoR-Xt-LZr"/>
+                <constraint firstAttribute="bottom" secondItem="xDt-oR-qIs" secondAttribute="bottom" id="ltz-qG-U1P"/>
+                <constraint firstItem="qxH-tq-slP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pCV-uP-9tU"/>
+            </constraints>
+            <point key="canvasLocation" x="49.5" y="132.5"/>
+        </view>
+    </objects>
+</document>

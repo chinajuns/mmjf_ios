@@ -1,0 +1,14 @@
+//
+//  MMJFPrefixHeader.pch
+//  Maomao
+//
+//  Created by 御顺 on 2017/11/16.
+//  Copyright © 2017年 御顺. All rights reserved.
+//
+
+#ifndef MMJFPrefixHeader_pch
+#define MMJFPrefixHeader_pch
+
+#import "MMJFHeader.h"
+
+#endif /* MMJFPrefixHeader_pch */

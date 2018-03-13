@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ClientHomeManagerCollCell">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="297" height="141"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAN-XN-6SS">
+                        <rect key="frame" x="0.0" y="0.0" width="297" height="141"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="aAN-XN-6SS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CLx-y6-Kas"/>
+                <constraint firstAttribute="bottom" secondItem="aAN-XN-6SS" secondAttribute="bottom" id="InF-1i-Q1c"/>
+                <constraint firstAttribute="trailing" secondItem="aAN-XN-6SS" secondAttribute="trailing" id="htL-cK-C17"/>
+                <constraint firstItem="aAN-XN-6SS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="k7U-jI-7UU"/>
+            </constraints>
+            <size key="customSize" width="297" height="141"/>
+            <connections>
+                <outlet property="backView" destination="aAN-XN-6SS" id="O4m-Vc-NJs"/>
+            </connections>
+            <point key="canvasLocation" x="30.5" y="151.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

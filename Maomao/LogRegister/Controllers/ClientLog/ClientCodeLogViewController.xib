@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClientCodeLogViewController">
+            <connections>
+                <outlet property="backView" destination="cqg-c9-8zJ" id="eFe-NA-bOG"/>
+                <outlet property="topLine" destination="KwW-xq-bqy" id="wvh-mE-AwG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ne5-cU-jsH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojm-d0-FFQ">
+                    <rect key="frame" x="15" y="30" width="45" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="v2r-J3-X0c"/>
+                    </constraints>
+                    <state key="normal" image="fan-hui-bai"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="GHh-Kh-d4K"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mao-mao-jin-fu" translatesAutoresizingMaskIntoConstraints="NO" id="Q36-OZ-RAe">
+                    <rect key="frame" x="114" y="70" width="147" height="32"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqg-c9-8zJ">
+                    <rect key="frame" x="28" y="153" width="319" height="376.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q36-OZ-RAe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7bV-dw-7d0"/>
+                <constraint firstItem="Q36-OZ-RAe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="96C-YJ-op5"/>
+                <constraint firstItem="cqg-c9-8zJ" firstAttribute="top" secondItem="Q36-OZ-RAe" secondAttribute="bottom" multiplier="1.5" id="BXp-Ri-rG4"/>
+                <constraint firstAttribute="bottom" secondItem="ne5-cU-jsH" secondAttribute="bottom" id="CQp-AI-aQD"/>
+                <constraint firstItem="cqg-c9-8zJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="CV9-eL-7Us"/>
+                <constraint firstItem="Q36-OZ-RAe" firstAttribute="width" secondItem="Q36-OZ-RAe" secondAttribute="height" multiplier="147:32" id="E75-66-iWh"/>
+                <constraint firstItem="ojm-d0-FFQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="IyZ-9f-ugY"/>
+                <constraint firstItem="ojm-d0-FFQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="KwW-xq-bqy"/>
+                <constraint firstItem="ne5-cU-jsH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RUO-tc-3oY"/>
+                <constraint firstAttribute="trailing" secondItem="ne5-cU-jsH" secondAttribute="trailing" id="Zgv-V8-IgJ"/>
+                <constraint firstAttribute="trailing" secondItem="cqg-c9-8zJ" secondAttribute="trailing" constant="28" id="ac3-MI-1ra"/>
+                <constraint firstAttribute="bottom" secondItem="cqg-c9-8zJ" secondAttribute="bottom" multiplier="1.26" id="bQ7-ZT-CTc"/>
+                <constraint firstItem="Q36-OZ-RAe" firstAttribute="width" secondItem="ne5-cU-jsH" secondAttribute="width" multiplier="147:375" id="cp0-U9-XUq"/>
+                <constraint firstItem="ne5-cU-jsH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xp3-Lz-HuD"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="375" height="667"/>
+        <image name="fan-hui-bai" width="14" height="24"/>
+        <image name="mao-mao-jin-fu" width="147" height="32"/>
+    </resources>
+</document>

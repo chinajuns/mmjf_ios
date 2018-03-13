@@ -1,0 +1,17 @@
+//
+//  ClientMapModel.m
+//  Maomao
+//
+//  Created by 御顺 on 2018/1/8.
+//  Copyright © 2018年 御顺. All rights reserved.
+//
+
+#import "ClientMapModel.h"
+
+@implementation ClientMapModel
+
++ (nullable NSDictionary<NSString *, id> *)modelCustomPropertyMapper{
+    
+    return @{@"Id":@"id"};
+}
+@end

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="343" id="KGk-i7-Jjw" customClass="ClientMineOrderStateTabCell">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="343"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="342.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9d-hu-Rhe">
+                        <rect key="frame" x="15" y="15" width="308" height="327.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woi-Yj-o6g">
+                                <rect key="frame" x="0.0" y="0.0" width="308" height="176"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="GND-Bu-v96"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eyk-NT-vOI">
+                                <rect key="frame" x="0.0" y="177" width="308" height="110"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="EAg-Vc-tby"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvw-Rk-41l">
+                                <rect key="frame" x="0.0" y="287" width="308" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oC-QJ-5px">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.81960784310000001" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                                        <state key="normal" title="评价">
+                                            <color key="titleColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LTS-1f-jNZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="2oC-QJ-5px" secondAttribute="trailing" id="UCw-jc-nqj"/>
+                                    <constraint firstItem="2oC-QJ-5px" firstAttribute="top" secondItem="lvw-Rk-41l" secondAttribute="top" id="a7F-LO-w62"/>
+                                    <constraint firstAttribute="bottom" secondItem="2oC-QJ-5px" secondAttribute="bottom" id="oVx-BO-eV3"/>
+                                    <constraint firstItem="2oC-QJ-5px" firstAttribute="leading" secondItem="lvw-Rk-41l" secondAttribute="leading" id="xLX-cA-u5v"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93709164860000005" green="0.93694382909999996" blue="0.95754462480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lvw-Rk-41l" secondAttribute="trailing" id="0O2-e7-bRY"/>
+                            <constraint firstItem="lvw-Rk-41l" firstAttribute="top" secondItem="Eyk-NT-vOI" secondAttribute="bottom" id="79v-eJ-c10"/>
+                            <constraint firstItem="woi-Yj-o6g" firstAttribute="top" secondItem="K9d-hu-Rhe" secondAttribute="top" id="FhW-NB-KIE"/>
+                            <constraint firstItem="woi-Yj-o6g" firstAttribute="leading" secondItem="K9d-hu-Rhe" secondAttribute="leading" id="Q1A-4F-T71"/>
+                            <constraint firstAttribute="trailing" secondItem="Eyk-NT-vOI" secondAttribute="trailing" id="U9F-Pc-S1X"/>
+                            <constraint firstItem="Eyk-NT-vOI" firstAttribute="top" secondItem="woi-Yj-o6g" secondAttribute="bottom" constant="1" id="VAN-5V-iE9"/>
+                            <constraint firstItem="lvw-Rk-41l" firstAttribute="leading" secondItem="K9d-hu-Rhe" secondAttribute="leading" id="Ynx-MK-49J"/>
+                            <constraint firstAttribute="trailing" secondItem="woi-Yj-o6g" secondAttribute="trailing" id="Z9w-ky-1Qu"/>
+                            <constraint firstItem="Eyk-NT-vOI" firstAttribute="leading" secondItem="K9d-hu-Rhe" secondAttribute="leading" id="l9l-At-0cc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93709164860000005" green="0.93694382909999996" blue="0.95754462480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="K9d-hu-Rhe" secondAttribute="trailing" constant="15" id="T1M-Lh-Q0I"/>
+                    <constraint firstAttribute="bottom" secondItem="K9d-hu-Rhe" secondAttribute="bottom" id="bXQ-y9-ORa"/>
+                    <constraint firstItem="K9d-hu-Rhe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ntY-ua-FUL"/>
+                    <constraint firstItem="K9d-hu-Rhe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="pJh-D0-HLr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="K9d-hu-Rhe" id="dAz-E4-xHU"/>
+                <outlet property="dataView" destination="woi-Yj-o6g" id="VZl-Ps-bZy"/>
+                <outlet property="evaluationBut" destination="2oC-QJ-5px" id="QCz-nw-auu"/>
+                <outlet property="evaluationView" destination="lvw-Rk-41l" id="HHP-pt-9av"/>
+                <outlet property="line" destination="LTS-1f-jNZ" id="sdN-ok-dFV"/>
+                <outlet property="statsView" destination="Eyk-NT-vOI" id="XAL-Bd-mmc"/>
+            </connections>
+            <point key="canvasLocation" x="58" y="283.5"/>
+        </tableViewCell>
+    </objects>
+</document>

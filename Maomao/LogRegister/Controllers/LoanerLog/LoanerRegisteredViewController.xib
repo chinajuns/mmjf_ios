@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoanerRegisteredViewController">
+            <connections>
+                <outlet property="backView" destination="TVc-lv-qxb" id="vsB-3a-kSy"/>
+                <outlet property="topLine" destination="jje-Za-KUw" id="YxI-hY-R9K"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="HPh-mg-IHg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcA-XU-plh">
+                    <rect key="frame" x="15" y="30" width="45" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="pFM-k9-agv"/>
+                    </constraints>
+                    <state key="normal" image="fan-hui-bai"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="vRL-5J-lqk"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mao-mao-jin-fu" translatesAutoresizingMaskIntoConstraints="NO" id="f3Y-et-zY7">
+                    <rect key="frame" x="114" y="70" width="147" height="32"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVc-lv-qxb">
+                    <rect key="frame" x="28" y="153" width="319" height="422"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f3Y-et-zY7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1PR-h9-lTW"/>
+                <constraint firstItem="HPh-mg-IHg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4fP-Rh-dlr"/>
+                <constraint firstItem="OcA-XU-plh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="5Pb-mO-Wa4"/>
+                <constraint firstItem="f3Y-et-zY7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="AGM-pE-ZvO"/>
+                <constraint firstItem="TVc-lv-qxb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="KdB-Hh-nTa"/>
+                <constraint firstItem="f3Y-et-zY7" firstAttribute="width" secondItem="f3Y-et-zY7" secondAttribute="height" multiplier="147:32" id="a5H-yn-qKJ"/>
+                <constraint firstAttribute="trailing" secondItem="HPh-mg-IHg" secondAttribute="trailing" id="aMR-1u-7du"/>
+                <constraint firstAttribute="bottom" secondItem="TVc-lv-qxb" secondAttribute="bottom" multiplier="1.16" id="dO6-WB-PNa"/>
+                <constraint firstItem="TVc-lv-qxb" firstAttribute="top" secondItem="f3Y-et-zY7" secondAttribute="bottom" multiplier="1.5" id="efb-il-dsq"/>
+                <constraint firstItem="OcA-XU-plh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="jje-Za-KUw"/>
+                <constraint firstItem="HPh-mg-IHg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mxN-su-SE3"/>
+                <constraint firstAttribute="bottom" secondItem="HPh-mg-IHg" secondAttribute="bottom" id="sfq-8p-0YO"/>
+                <constraint firstAttribute="trailing" secondItem="TVc-lv-qxb" secondAttribute="trailing" constant="28" id="xkB-eO-XM9"/>
+            </constraints>
+            <point key="canvasLocation" x="38.5" y="81.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="375" height="667"/>
+        <image name="fan-hui-bai" width="14" height="24"/>
+        <image name="mao-mao-jin-fu" width="147" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClientRegisteredViewController">
+            <connections>
+                <outlet property="backView" destination="Voo-Jx-4D6" id="6H4-5Z-0Hy"/>
+                <outlet property="topLine" destination="sEL-t8-AvW" id="Asf-mf-yzy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="JaM-fh-bSO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efL-Px-ZQm">
+                    <rect key="frame" x="15" y="30" width="45" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="fdG-HE-Tdc"/>
+                    </constraints>
+                    <state key="normal" image="fan-hui-bai"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="GtJ-dZ-dbp"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mao-mao-jin-fu" translatesAutoresizingMaskIntoConstraints="NO" id="LAg-6X-Qhj">
+                    <rect key="frame" x="113.5" y="70" width="147" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="LAg-6X-Qhj" secondAttribute="height" multiplier="147:32" id="Tm7-eb-hlA"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Voo-Jx-4D6">
+                    <rect key="frame" x="28" y="153" width="319" height="403"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LAg-6X-Qhj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1MZ-le-nxI"/>
+                <constraint firstItem="JaM-fh-bSO" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="1aN-fc-fYd"/>
+                <constraint firstItem="JaM-fh-bSO" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="D7L-iF-3pZ"/>
+                <constraint firstItem="JaM-fh-bSO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wgf-0d-2Dm"/>
+                <constraint firstItem="LAg-6X-Qhj" firstAttribute="width" secondItem="JaM-fh-bSO" secondAttribute="width" multiplier="147:375" id="Xru-9l-A60"/>
+                <constraint firstAttribute="trailing" secondItem="Voo-Jx-4D6" secondAttribute="trailing" constant="28" id="b9o-QT-Exf"/>
+                <constraint firstItem="LAg-6X-Qhj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="eMm-CG-7ma"/>
+                <constraint firstItem="efL-Px-ZQm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="hhb-Hf-54A"/>
+                <constraint firstItem="JaM-fh-bSO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hnt-3e-5ID"/>
+                <constraint firstAttribute="bottom" secondItem="Voo-Jx-4D6" secondAttribute="bottom" multiplier="1.2" id="osQ-Rh-y8i"/>
+                <constraint firstItem="Voo-Jx-4D6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="qDV-mO-JCz"/>
+                <constraint firstItem="efL-Px-ZQm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="sEL-t8-AvW"/>
+                <constraint firstItem="Voo-Jx-4D6" firstAttribute="top" secondItem="LAg-6X-Qhj" secondAttribute="bottom" multiplier="1.5" id="unN-E9-LWx"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg" width="375" height="667"/>
+        <image name="fan-hui-bai" width="14" height="24"/>
+        <image name="mao-mao-jin-fu" width="147" height="32"/>
+    </resources>
+</document>
